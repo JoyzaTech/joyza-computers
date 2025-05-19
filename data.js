@@ -1,13 +1,13 @@
-let NavCollections = {
-    Computers,
-    Software,
-    Accessories
-}
+// export const navCollections = {
+//     computers,
+//     software,
+//     accessories
+// }
 
-let Computers = {
+export let computers = {
     item1: {
         name: "UltraPro X15 Laptop",
-        images: ["ultrapro_x15.jpg"],
+        images: ["https://res.cloudinary.com/duehylw5k/image/upload/v1740174994/Hexagon_1_eqfzxc.svg"],
         price: 1399.99,
         description: "High-performance laptop with an ultra-thin design, perfect for gaming and professional use.",
         features: [
@@ -70,7 +70,7 @@ let Computers = {
     }
 }
 
-let Software = {
+export let software = {
     item1: {
         name: "PhotoMaster Pro",
         images: ["photomaster_pro.jpg"],
@@ -136,7 +136,7 @@ let Software = {
     }
 }
 
-let Accessories = {
+export let accessories = {
     item1: {
         name: "ProSound Wireless Headset",
         images: ["prosound_headset.jpg"],
