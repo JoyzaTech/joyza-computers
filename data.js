@@ -73,7 +73,7 @@ export let computers = {
 export let software = {
     item1: {
         name: "PhotoMaster Pro",
-        images: ["photomaster_pro.jpg"],
+        images: ["https://res.cloudinary.com/duehylw5k/image/upload/v1740174994/Hexagon_1_eqfzxc.svg"],
         price: 89.99,
         description: "Advanced photo editing software with AI-powered tools.",
         features: [
@@ -94,7 +94,7 @@ export let software = {
     },
     item2: {
         name: "SecureGuard Antivirus",
-        images: ["secureguard.jpg"],
+        images: ["https://res.cloudinary.com/duehylw5k/image/upload/v1740174994/Hexagon_1_eqfzxc.svg"],
         price: 49.99,
         description: "Comprehensive antivirus and online protection suite.",
         features: [
@@ -115,7 +115,7 @@ export let software = {
     },
     item3: {
         name: "CodeSmith IDE",
-        images: ["codesmith_ide.jpg"],
+        images: ["https://res.cloudinary.com/duehylw5k/image/upload/v1740174994/Hexagon_1_eqfzxc.svg"],
         price: 129.99,
         description: "Modern IDE for full-stack development with smart code assistance.",
         features: [
