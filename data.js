@@ -28,7 +28,7 @@ export let computers = {
     },
     item2: {
         name: "CompactAir Chromebook",
-        images: ["compactair.jpg"],
+        images: ["https://res.cloudinary.com/duehylw5k/image/upload/v1740174994/Hexagon_1_eqfzxc.svg"],
         price: 349.99,
         description: "Lightweight and budget-friendly Chromebook ideal for students and casual browsing.",
         features: [
@@ -49,7 +49,7 @@ export let computers = {
     },
     item3: {
         name: "PowerTower Z7 Desktop",
-        images: ["powertower_z7.jpg"],
+        images: ["https://res.cloudinary.com/duehylw5k/image/upload/v1740174994/Hexagon_1_eqfzxc.svg"],
         price: 1199.99,
         description: "Custom-built desktop designed for creative professionals and gamers.",
         features: [
