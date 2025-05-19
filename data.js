@@ -7,7 +7,7 @@ export let navCollections = [
 export let computers = {
     item1: {
         name: "UltraPro X15 Laptop",
-        images: ["https://res.cloudinary.com/duehylw5k/image/upload/v1740174994/Hexagon_1_eqfzxc.svg"],
+        images: ["https://res.cloudinary.com/dom4vyzw7/image/upload/v1747691554/8192_7oYbML._UF1000_1000_QL80__bt9tyf.jpg"],
         price: 1399.99,
         description: "High-performance laptop with an ultra-thin design, perfect for gaming and professional use.",
         features: [
@@ -28,7 +28,7 @@ export let computers = {
     },
     item2: {
         name: "CompactAir Chromebook",
-        images: ["https://res.cloudinary.com/duehylw5k/image/upload/v1740174994/Hexagon_1_eqfzxc.svg"],
+        images: ["https://res.cloudinary.com/dom4vyzw7/image/upload/v1747691554/8192_7oYbML._UF1000_1000_QL80__bt9tyf.jpg"],
         price: 349.99,
         description: "Lightweight and budget-friendly Chromebook ideal for students and casual browsing.",
         features: [
@@ -49,7 +49,7 @@ export let computers = {
     },
     item3: {
         name: "PowerTower Z7 Desktop",
-        images: ["https://res.cloudinary.com/duehylw5k/image/upload/v1740174994/Hexagon_1_eqfzxc.svg"],
+        images: ["https://res.cloudinary.com/dom4vyzw7/image/upload/v1747691554/8192_7oYbML._UF1000_1000_QL80__bt9tyf.jpg"],
         price: 1199.99,
         description: "Custom-built desktop designed for creative professionals and gamers.",
         features: [
