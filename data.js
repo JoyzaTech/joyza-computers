@@ -1,8 +1,8 @@
-// export const navCollections = {
-//     computers,
-//     software,
-//     accessories
-// }
+export let navCollections = [
+    'Computers',
+    'Software',
+    'Accessories'
+]
 
 export let computers = {
     item1: {

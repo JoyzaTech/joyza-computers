@@ -2,10 +2,13 @@
 import BriefInfo from '../components/briefInfo'
 import { computers, software } from '../data'
 import { useState } from 'react';
+import NavMenu from '../components/categories';
 
 export default function Home() {
   const [data, setData] = useState(computers)
   return (
+    <>
+    <NavMenu/>
     <div>
       {Object.values(data).map((item, index) => {
         return(
@@ -13,5 +16,7 @@ export default function Home() {
         )
       })}
     </div>
+    
+    </>
   )
 }
