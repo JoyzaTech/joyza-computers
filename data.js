@@ -1,7 +1,7 @@
 export let navCollections = [
-    'Computers',
-    'Software',
-    'Accessories'
+    'computers',
+    'software',
+    'accessories'
 ]
 
 export let computers = {
@@ -139,7 +139,7 @@ export let software = {
 export let accessories = {
     item1: {
         name: "ProSound Wireless Headset",
-        images: ["prosound_headset.jpg"],
+        images: ["https://res.cloudinary.com/duehylw5k/image/upload/v1734143850/task-manager/cb0aal7zt4uyjwqkv7j7.jpg"],
         price: 99.99,
         description: "Noise-cancelling wireless headset with crystal clear audio and long battery life.",
         features: [
@@ -160,7 +160,7 @@ export let accessories = {
     },
     item2: {
         name: "ErgoLift Laptop Stand",
-        images: ["ergolift_stand.jpg"],
+        images: ["https://res.cloudinary.com/duehylw5k/image/upload/v1734143850/task-manager/cb0aal7zt4uyjwqkv7j7.jpg"],
         price: 39.99,
         description: "Aluminum laptop stand for improved ergonomics and cooling.",
         features: [
@@ -181,7 +181,7 @@ export let accessories = {
     },
     item3: {
         name: "HyperClick RGB Mouse",
-        images: ["hyperclick_mouse.jpg"],
+        images: ["https://res.cloudinary.com/duehylw5k/image/upload/v1734143850/task-manager/cb0aal7zt4uyjwqkv7j7.jpg"],
         price: 59.99,
         description: "Ergonomic gaming mouse with customizable RGB lighting and precision tracking.",
         features: [
