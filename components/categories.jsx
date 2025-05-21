@@ -15,7 +15,7 @@ const categories = ({ onSelectCategory }) => {
 
             <div className='bg-[#6E6E6E] h-[100vh] my-4'>
                 {navCollections.map((category) => (
-                    <div key={category} className='bg-[#6E6E6E] hover:bg-[#6E6E5E] text-center p-[2vw]' onClick={() => category == 'computers' ? onSelectCategory('computers') : category == 'software' ? onSelectCategory('software') : onSelectCategory('accessories')}><button>{category}</button></div>
+                    <div key={category} className='bg-[#6E6E6E] hover:bg-[#5D5D5D] text-center p-[2vw]' onClick={() => category == 'computers' ? onSelectCategory('computers') : category == 'software' ? onSelectCategory('software') : onSelectCategory('accessories')}><button>{category}</button></div>
                 ))}
             </div>
         </div>
