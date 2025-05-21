@@ -3,10 +3,11 @@
 import BriefInfo from '../components/briefInfo';
 import NavMenu from '../components/categories';
 import TopArea from '../components/topArea';
-import Popup from '../components/popup'
+import Popup from '../components/popup';
+import Cart from '../components/cart'
 
 //data imports
-import { computers, software, accessories } from '../data'
+import { computers, software, accessories, cartItems } from '../data'
 
 //react imports
 import { useState } from 'react';
@@ -21,6 +22,17 @@ export default function Home() {
   //data for popup
   const [popupData, setPopupData] = useState(null)
 
+  const [cart, setCart] = useState({
+    items:[],
+    prices:[],
+    amounts:[]
+  })
+  const [isCart, setIsCart] = useState(false)
+
+  const handleCart = () => {
+    setIsCart(!isCart)
+  }
+
   //handles data change
   const handleDataChange = (theData) => {
     if (theData === 'computers'){
@@ -32,11 +44,19 @@ export default function Home() {
     }
   }
 
+  const addToCart = (newItem, newPrice, newAmount) => {
+    setCart(prevCart => ({
+      items: [...prevCart.items, newItem],
+      prices: [...prevCart.prices, newPrice],
+      amounts: [...prevCart.amounts, newAmount]
+    }))
+  }
+
   //returns html
   return (
     <div>
       <div className='flex flex-col'>
-        <TopArea />
+        <TopArea onCart={() => handleCart}/>
 
         <div className='flex'>
           <NavMenu onSelectCategory={handleDataChange}/>
@@ -53,7 +73,13 @@ export default function Home() {
 
       {popupData && (
         <div className='fixed inset-0 flex items-center justify-center z-50'>
-          <Popup info={popupData} onClick={() => setPopupData(null)}/>
+          <Popup info={popupData} onClick={() => setPopupData(null)} onAdd={addToCart} />
+        </div>
+      )}
+
+      {isCart && (
+        <div className='fixed inset-0 flex items-center justify-center z-50'>
+          <Cart items={cart.items} prices={cart.prices} quantitys={cart.amounts} onClose={() => setIsCart(!isCart)} />
         </div>
       )}
     </div>

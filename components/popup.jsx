@@ -12,7 +12,7 @@ import { CgMathPlus } from "react-icons/cg";
 
 
 //html area
-export default function Popup({ info, onClick }) {
+export default function Popup({ info, onClick, onAdd }) {
     const [quantity, setQuantity] = useState(1)
 
     return(
@@ -25,7 +25,7 @@ export default function Popup({ info, onClick }) {
                     <button onClick={() => quantity > 0 ? setQuantity(quantity - 1) : setQuantity(quantity)} className="m-2"><CgMathMinus /></button>
                     <div className="bg-[#5D5D5D] w-[2vw] h-[2vw] rounded-lg text-white my-2"><p>{quantity}</p></div>
                     <button onClick={() => setQuantity(quantity + 1)} className="m-2"><CgMathPlus /></button>
-                    <button className="bg-[#0071C7] p-2 rounded-lg">Add to cart</button>
+                    <button className="bg-[#0071C7] hover:bg-[#005FA8] p-2 rounded-lg" onClick={() => onAdd(info.name, info.price, quantity)}>Add to cart</button>
                 </div>
             </div>
 
