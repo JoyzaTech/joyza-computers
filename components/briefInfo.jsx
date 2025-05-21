@@ -14,7 +14,7 @@ export default function BriefInfo({ img, title, className, onClick }) {
                 />
             </div>
 
-            <p>{title}</p>
+            <p className="text-2xl">{title}</p>
         </div>
     )
 }
