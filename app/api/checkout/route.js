@@ -6,10 +6,10 @@ const stripe = new Stripe(process.env.SECRET_KEY);
 export async function POST(request) {
   try {
     const { items } = await request.json();
-    
+    // This could be changed later on, it just saves it to relog back into it.
     const origin =  'http://localhost:3000';
 
-    // Create a checkout session
+    // Creates the checkout session
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
       line_items: items.map(item => ({
@@ -17,7 +17,7 @@ export async function POST(request) {
           currency: 'usd',
           product_data: {
             name: item.name,
-          },
+          }, 
           unit_amount: Math.round(item.price * 100), // Stripe uses cents
         },
         quantity: item.quantity,
