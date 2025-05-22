@@ -1,6 +1,6 @@
 # joyza-computers
 
-This is a Next.js project, likely for building a web application related to "joyza-computers".
+This is a Next.js project
 
 ## Getting Started
 
