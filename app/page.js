@@ -12,9 +12,6 @@ import { computers, software, accessories, cartItems } from '../data'
 //react imports
 import { useState } from 'react';
 
-//mongodb imports(if needed)
-import { accessedDynamicData } from 'next/dist/server/app-render/dynamic-rendering';
-
 export default function Home() {
   //data being read on screen
   const [data, setData] = useState(computers)
